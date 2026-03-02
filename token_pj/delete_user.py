@@ -8,12 +8,12 @@ def deletar_por_token(token):
     conn.commit()
 
     if cursor.rowcount > 0:
-        print("Usuário deletado com sucesso.")
+        print("success.")
     else:
-        print("Token não encontrado.")
+        print("token not found.")
 
     conn.close()
 
 
-token = input("Digite o token do usuário que deseja apagar: ")
+token = input("enter the token you want to delete: ")
 deletar_por_token(token)

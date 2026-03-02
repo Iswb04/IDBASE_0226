@@ -15,9 +15,10 @@ def verificar_token(token_recebido):
     return resultado
 
 
-usuario = input("Digite o token: ")
+verify = input("enter the token: ")
+usuario = verificar_token(verify)
 
 if usuario:
-    print(f"Acesso liberado. Bem vindo(a), {usuario[0]}")
+    print(f"access granted. welcome, {usuario[0]}.")
 else:
-    print("Acesso negado")
+    print("access denied.")
